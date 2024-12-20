@@ -1,19 +1,17 @@
-# Espanso Choice Extension Shortcut
+# Espanso Form Extension Shortcut
 
-> This package allows you to quickly create a new espanso shortcut with the choice extension. Please see the example below. 
-
+> This package allows you to quickly create a new Espanso shortcut containing a list Form extension. Please see the example below. 
 
 ## Usage
 
-Let's say you want to create a new espanso shortcut that will allow you to choose between different options such as a list of colors that you frequently use in styling. Or you have a list of co-worker logins that you need to use but can't always remember off hand. You can use the choice extension to quickly generate a shortcut template that you can customize to give you a list of options to choose from.
+Let's say you want to create a new Espanso shortcut that will allow you to choose between different options such as a list of colors that you frequently use in styling. Or you have a list of co-worker logins that you need to use but can't always remember off-hand. You can use the Form extension to quickly generate a shortcut template to give you a list of options to choose from.
 
+Type `:vblf` (verbose list form) in your YAML code-editor and complete the information in the popup form. Once you click `Submit` a form trigger will be pasted in its place. Further edits, such as additional options, or changing the field `type:` to `choice`, can then be inserted.
 
 Please see [![espanso-verbose-form-template](https://img.youtube.com/vi/videoid/0.jpg)](https://www.youtube.com/watch?v=VEGv4aHV1d8)
-for a short video demo
-
+for a short video demo of an earlier version.
 
 ```yaml
-
 # Example usage
 
   - triggers: ['csscolors--', 'csscol--']
@@ -53,16 +51,8 @@ for a short video demo
               - limegreen
               - skyblue
               - tan
-
 ```
 
 ## Source 
 
 Please refer to the awesome documentation for verbose syntax forms here https://espanso.org/docs/matches/forms/#controls-with-the-verbose-syntax
-
-![espanso-choice-extension-template](./verbose-form.jpeg)
-
-
-## Notes
-
-I added manual unicode value for white space `\u0020` and `\n` for new line. This is because I had issues with vscode settings interfering with my YAML spacing and I found that just writing shortcuts like this was easier. 
